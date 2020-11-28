@@ -1,0 +1,82 @@
+/* ==== GENERAL STYLES ==== */
+
+* {
+  box-sizing: border-box;
+}
+
+
+nav {
+  background-color: rgba(0, 0, 0, .9);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  padding: .5rem 1rem;
+  ;
+}
+
+nav a:hover {
+  color: hsl(0, 0%, 77%);
+  transition: color .15s ease-in-out;
+}
+
+
+.btn-sign-up {
+  border: 1px solid hsla(0, 0%, 100%, .2);
+  border-radius: 9999px;
+}
+
+
+.btn-sign-up:hover {
+  transition: background-color .3s ease-in-out;
+  background-color: #fff;
+  color: #000;
+}
+
+p {
+  font-size: 1rem;
+  font-family: 'Space Mono', monospace;
+}
+
+
+
+@media (min-width: 768px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+   body {
+    width: 60%;
+    margin: 5.25rem auto 1.25rem;
+  }
+
+  nav a {
+    float: right;
+  }
+
+  .btn-home {
+    float: left;
+  }
+
+  /* Clearfix */
+  nav:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  p {
+  margin-bottom: 1.25rem;
+  padding: .5rem;
+}
+  
+}
